@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import './App.css';
+import ChatBot from './lib/index';
+import {RemoteTextStep} from './lib/steps_components/'
+import DialogFlowStep from './DialogFlowStep'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const steps = [
+  {
+    id: 'welcome',
+    message: 'Welcome, order coffee?',
+    trigger: 'user',
+  },
+  {
+    id: 'user',
+    user: true,
+    trigger: 'dialog-flow'
+  },
+  {
+    id: 'dialog-flow',
+    component: <DialogFlowStep/>,
+    waitAction: true,
+    trigger: 'user',
+    asMessage: true
+  },
+];
+
+
+
+class App extends Component {
+  render () {
+    return (
+      <div style={{width:'350px', margin:'40px auto'}}>
+        <ChatBot steps={steps} />
+      </div>
+    )
+  }
 }
 
-export default App;
+App.propTypes = {}
+
+export default App

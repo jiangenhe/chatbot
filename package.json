@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dialogflow-gateway": "^0.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "react-simple-chatbot": "^0.6.1",
+    "styled-components": "^4.2.0",
+    "prop-types": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -13,9 +17,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://jiangenhe.com:8001",
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "./",
   "browserslist": {
     "production": [
       ">0.2%",
