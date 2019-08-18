@@ -12,14 +12,15 @@ if (userData.get(BOT_CODE)) {
   steps = [
     {
       id: 'welcome-text',
-      message: `Hi there :wave: I'm ${botConfig[userData.get(BOT_CODE)].name}`,
+      message: `Welcome :wave: I'm ${botConfig[userData.get(BOT_CODE)].name}`,
       trigger: 'welcome-image',
     },
     {
       id: 'welcome-image',
       component: <div><img style={{
         borderRadius: '5px',
-        boxShadow: 'rgba(0, 0, 0, 0.15) 0px 1px 2px 0px'
+        boxShadow: 'rgba(0, 0, 0, 0.15) 0px 1px 2px 0px',
+        margin: '2px 0 0 0'
       }
       } width={165} height={220}
                            src={`images/${userData.get(BOT_CODE)}_large.png`}
@@ -32,31 +33,25 @@ if (userData.get(BOT_CODE)) {
         {
           value: 0,
           label: `Hi ${botConfig[userData.get(BOT_CODE)].name}`,
-          trigger: 'welcome-name'
+          trigger: 'welcome-intro-1'
         }],
     },
     {
-      id: 'welcome-name',
-      message: 'What\'s your first name? :pencil2:',
-      trigger: 'welcome-user-name'
+      id: 'welcome-intro-1',
+      message: 'I\'m an Artificial Intelligence, or, a bot. :robot_face:',
+      trigger: 'welcome-intro-2'
     },
     {
-      id: 'welcome-user-name',
-      user: true,
-      trigger: (value) => {
-        userData.set(USER_NAME, value.value)
-        return 'welcome-compliment';
-      }
+      id: 'welcome-intro-2',
+      message: 'I listen to your story and help you better cope with life. :smile:',
+      trigger: 'dialog-welcome'
     },
     {
-      id: 'welcome-compliment',
-      message: `{previousValue}. That's a nice name`,
-      trigger: 'welcome-bot-intro'
-    },
-    {
-      id: 'welcome-bot-intro',
-      message: 'I am emotional assistant',
-      trigger: 'user'
+      id: 'dialog-welcome',
+      component: <DialogFlowStep sendMessage='hello'/>,
+      waitAction: true,
+      trigger: 'user',
+      asMessage: true
     },
     {
       id: 'user',

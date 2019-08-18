@@ -18,9 +18,9 @@ class DialogFlowStep extends Component {
 
   componentWillMount() {
     const self = this;
-    const { steps } = this.props;
+    const { steps, sendMessage } = this.props;
     console.log(steps);
-    const query = steps.user.value;
+    const query = sendMessage ? sendMessage : steps.user.value;
 
     fetch(`http://jiangenhe.com:8001/?query=${query}${UserData.get(SESSION_ID) ? `&sessionId=${UserData.get(SESSION_ID)}` : ''}`, {mode: "cors"})
       .then(response => {
@@ -63,6 +63,12 @@ class DialogFlowStep extends Component {
   }
 }
 
-DialogFlowStep.propTypes = {}
+DialogFlowStep.propTypes = {
+  sendMessage: PropTypes.string
+}
+
+DialogFlowStep.defaultProps = {
+  sendMessage: null
+}
 
 export default DialogFlowStep
