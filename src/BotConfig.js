@@ -2,16 +2,6 @@
 // https://www.babycenter.com/0_100-most-popular-hispanic-baby-names-of-2011_10363639.bc
 // https://www.momjunction.com/articles/asian-baby-names-for-girls-and-boys_00433930/
 
-const code = {
-  AF: "ASIAN_FEMALE",
-  AM: "ASIAN_MALE",
-  BF: "BLACK_FEMALE",
-  BM: "BLACK_MALE",
-  HF: "HISPANIC_FEMALE",
-  HM: "HISPANIC_MALE",
-  WF: "WHITE_FEMALE",
-  WM: "WHITE_MALE"
-}
 
 const botConfig = {
   AF: {gender: 'F', race: 'A', avatar:'./avatar/af.png', name: 'Hong'},

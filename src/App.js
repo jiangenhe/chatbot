@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import './App.css';
 import ChatBot from './lib/index';
 import { ThemeProvider } from 'styled-components';
 import DialogFlowStep from './DialogFlowStep'
-import userData, {BOT_CODE, USER_NAME} from './UserData'
+import userData, {BOT_CODE} from './UserData'
 import botConfig from './BotConfig'
 let steps;
 

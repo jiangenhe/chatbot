@@ -53,7 +53,7 @@ class DialogFlowStep extends Component {
   }
 
   render() {
-    const { trigger, loading, result } = this.state;
+    const { loading, result } = this.state;
 
     return (
       <div>
