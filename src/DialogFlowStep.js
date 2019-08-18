@@ -22,7 +22,7 @@ class DialogFlowStep extends Component {
     console.log(steps);
     const query = steps.user.value;
 
-    fetch(`http://jiangenhe.com:8001/?query=${query}${UserData.get(SESSION_ID) ? `&sessionId=${UserData.get(SESSION_ID).value}` : ''}`, {mode: "cors"})
+    fetch(`http://jiangenhe.com:8001/?query=${query}${UserData.get(SESSION_ID) ? `&sessionId=${UserData.get(SESSION_ID)}` : ''}`, {mode: "cors"})
       .then(response => {
         console.log(response);
         return response.json();
@@ -31,7 +31,7 @@ class DialogFlowStep extends Component {
         console.log(data);
         if (!UserData.get(SESSION_ID)) {
           if (data.sessionId) {
-            UserData.add({id: SESSION_ID, value: data.sessionId})
+            UserData.set(SESSION_ID, data.sessionId)
           }
         }
         if (data.fulfillmentText) {
