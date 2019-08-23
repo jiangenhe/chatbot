@@ -5,6 +5,11 @@ import { ThemeProvider } from 'styled-components';
 import DialogFlowStep from './DialogFlowStep'
 import userData, {BOT_CODE} from './UserData'
 import botConfig from './BotConfig'
+import AvatarImageStep from './AvatarImageStep'
+import DialogFlowOptionsStep
+  from './lib/steps_components/options/DialogFlowOptionsStep'
+import MultipleSteps from './MultipleSteps'
+
 let steps;
 
 if (userData.get(BOT_CODE)) {
@@ -16,14 +21,7 @@ if (userData.get(BOT_CODE)) {
     },
     {
       id: 'welcome-image',
-      component: <div><img style={{
-        borderRadius: '5px',
-        boxShadow: 'rgba(0, 0, 0, 0.15) 0px 1px 2px 0px',
-        margin: '2px 0 0 0'
-      }
-      } width={165} height={220}
-                           src={`images/${userData.get(BOT_CODE)}_large.png`}
-                           alt="Chatbot's avatar"/></div>,
+      component: <AvatarImageStep/>,
       trigger: 'welcome-user-hi'
     },
     {
@@ -58,12 +56,27 @@ if (userData.get(BOT_CODE)) {
       trigger: 'dialog-flow'
     },
     {
+      id: 'options',
+      options: [],
+      asOption: true
+    },
+    {
       id: 'dialog-flow',
       component: <DialogFlowStep/>,
       waitAction: true,
-      trigger: 'user',
       asMessage: true
     },
+    {
+      id: 'multiple',
+      component: <MultipleSteps/>,
+      asMessage: true,
+      waitAction: true
+    },
+    {
+      id: 'bye',
+      message: 'Bye!',
+      end: true
+    }
   ];
 }
 

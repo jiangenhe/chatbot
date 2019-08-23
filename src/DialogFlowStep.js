@@ -13,43 +13,73 @@ class DialogFlowStep extends Component {
       trigger: false,
     };
 
-    this.triggetNext = this.triggetNext.bind(this);
   }
 
   componentWillMount() {
     const self = this;
-    const { steps, sendMessage } = this.props;
-    console.log(steps);
-    const query = sendMessage ? sendMessage : steps.user.value;
+    const { sendMessage, previousStep } = this.props;
+    const query = sendMessage ? sendMessage : previousStep.value;
 
     fetch(`http://jiangenhe.com:8001/?query=${query}${UserData.get(SESSION_ID) ? `&sessionId=${UserData.get(SESSION_ID)}` : ''}`, {mode: "cors"})
       .then(response => {
-        console.log(response);
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         if (!UserData.get(SESSION_ID)) {
           if (data.sessionId) {
             UserData.set(SESSION_ID, data.sessionId)
           }
         }
+
+        let messages;
         if (data.fulfillmentText) {
-          self.setState({ loading: false, result: data.fulfillmentText });
-        } else {
-          self.setState({ loading: false, result: 'Not found.' });
+          messages = data.fulfillmentText.split('\n').map(m => ({message: m}));
+          if (data.fulfillmentMessages) {
+            for (let i in data.fulfillmentMessages) {
+              let message = data.fulfillmentMessages[i];
+              if (message.payload) {
+                if (message.payload.fields) {
+                  if (message.payload.fields.options) {
+                    console.log(message.payload.fields.options);
+                    if (message.payload.fields.options.listValue) {
+                      let options = message.payload.fields.options.listValue.values;
+                      messages.push({options: options.map(option => ({value: option.stringValue, label: option.stringValue}))});
+                    }
+                  }
+                }
+              }
+            }
+          }
+          if (messages.length === 1){
+            self.setState({ loading: false, result: data.fulfillmentText });
+            this.setState({ trigger: true }, () => {
+              this.props.triggerNextStep({trigger: 'user'});
+            });
+          } else {
+            console.log(messages[0].message);
+            self.setState({ loading: false, result: messages[0].message });
+            const restMessages = messages.slice(1);
+            if (restMessages[0].options) {
+              this.setState({trigger: true}, () => {
+                this.props.triggerNextStep({
+                  trigger: 'options',
+                  value: {options: restMessages[0].options}
+                });
+              });
+            } else {
+              this.setState({ trigger: true }, () => {
+                this.props.triggerNextStep({trigger: 'multiple', value: messages.slice(1)});
+              });
+            }
+          }
         }
+
+
+
+        // else {
+        //   self.setState({ loading: false, result: 'Not found.' });
+        // }
       });
-  }
-
-  componentDidMount () {
-    this.triggetNext()
-  }
-
-  triggetNext() {
-    this.setState({ trigger: true }, () => {
-      this.props.triggerNextStep();
-    });
   }
 
   render() {
