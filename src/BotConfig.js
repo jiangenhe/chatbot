@@ -4,12 +4,12 @@
 
 
 const botConfig = {
-  AF: {gender: 'F', race: 'A', avatar:'./avatar/af.png', name: 'Hong'},
-  AM: {gender: 'M', race: 'A', avatar:'./avatar/am.png', name: 'Lee'},
+  AF: {gender: 'F', race: 'A', avatar:'./avatar/af.png', name: 'Jenny'},
+  AM: {gender: 'M', race: 'A', avatar:'./avatar/am.png', name: 'David'},
   BF: {gender: 'F', race: 'B', avatar:'./avatar/bf.png', name: 'Ebony'},
   BM: {gender: 'M', race: 'B', avatar:'./avatar/bm.png', name: 'Darnell'},
   HF: {gender: 'F', race: 'H', avatar:'./avatar/hf.png', name: 'Camila'},
-  HM: {gender: 'M', race: 'H', avatar:'./avatar/hm.png', name: 'Mateo'},
+  HM: {gender: 'M', race: 'H', avatar:'./avatar/hm.png', name: 'Antonio'},
   WF: {gender: 'F', race: 'W', avatar:'./avatar/wf.png', name: 'Molly'},
   WM: {gender: 'M', race: 'W', avatar:'./avatar/wm.png', name: 'Jake'},
 }

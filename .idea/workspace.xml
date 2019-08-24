@@ -2,62 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae1d5770-0095-43df-bbfa-619336c1ffff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/emacs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AvatarImageStep.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ChatBot.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/common/animations.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/common/rgba.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ChatBotContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/Content.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/FloatButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/FloatingIcon.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/HeaderIcon.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/HeaderTitle.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/Input.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/SubmitButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/icons/ChatIcon.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/icons/CloseIcon.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/icons/MicIcon.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/icons/SubmitIcon.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/icons/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/recognition.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/schemas/customSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/schemas/optionsSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/schemas/schema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/schemas/textSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/schemas/updateSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/schemas/userSchema.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/speechSynthesis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/common/Loading.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/common/LoadingStep.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/custom/CustomStep.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/custom/CustomStepContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/options/DialogFlowOptionsStep.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/options/Option.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/options/OptionElement.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/options/Options.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/options/OptionsStep.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/options/OptionsStepContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/text/Bubble.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/text/Image.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/text/ImageContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/text/TextStep.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/steps_components/text/TextStepContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DialogFlowStep.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DialogFlowStep.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BotConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BotConfig.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -82,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/steps_components/text/TextStep.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="462">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -94,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MultipleSteps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="945">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -106,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1023">
-              <caret line="82" column="15" lean-forward="true" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+            <state relative-caret-position="1512">
+              <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -127,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/steps_components/options/OptionsStep.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
+            <state relative-caret-position="798">
               <caret line="43" column="72" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -139,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/steps_components/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
+            <state relative-caret-position="21">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
@@ -151,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/ChatBot.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
+            <state relative-caret-position="4998">
               <caret line="259" column="23" selection-start-line="259" selection-start-column="23" selection-end-line="259" selection-end-column="23" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -163,8 +109,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BotConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="3" />
+            <state relative-caret-position="126">
+              <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -175,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DialogFlowStep.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-667">
+            <state relative-caret-position="336">
               <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -187,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/steps_components/custom/CustomStep.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
+            <state relative-caret-position="420">
               <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -244,7 +190,6 @@
         <option value="$PROJECT_DIR$/src/lib/steps_components/text/ImageContainer.jsx" />
         <option value="$PROJECT_DIR$/src/lib/steps_components/text/Bubble.jsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/BotConfig.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/AvatarImageStep.js" />
         <option value="$PROJECT_DIR$/src/lib/steps_components/options/DialogFlowOptionsStep.jsx" />
@@ -257,6 +202,7 @@
         <option value="$PROJECT_DIR$/src/lib/steps_components/text/TextStep.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/lib/ChatBot.jsx" />
+        <option value="$PROJECT_DIR$/src/BotConfig.js" />
       </list>
     </option>
   </component>
@@ -399,7 +345,8 @@
       <workItem from="1566491715115" duration="8701000" />
       <workItem from="1566507364552" duration="917000" />
       <workItem from="1566508585387" duration="7606000" />
-      <workItem from="1566517432927" duration="4013000" />
+      <workItem from="1566517432927" duration="4386000" />
+      <workItem from="1566671199240" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="first demo: basic function of chatbot with connection to self-deployed dialogflow service.">
       <created>1565810473739</created>
@@ -429,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566163264654</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1. Options for users&#10;2. One sentence one bubble">
+      <created>1566591110281</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1566591110281</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91393000" />
+    <option name="totallyTimeSpent" value="91810000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,10 +399,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="40" width="1920" height="1080" extended-state="0" />
+    <frame x="-2560" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945235" visible="true" weight="0.19536598" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945235" visible="true" weight="0.1953525" />
       <window_info id="Structure" order="1" sideWeight="0.50054765" side_tool="true" weight="0.14612052" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50054765" side_tool="true" weight="0.06931863" />
@@ -462,7 +416,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32717872" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21529175" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21491876" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -497,7 +451,8 @@
     <MESSAGE value="change interface design and front-end side welcome intent" />
     <MESSAGE value="1. add welcome intent&#10;2. change integration with dialogflow&#10;3. add favicon" />
     <MESSAGE value="1. remove unnecessary packages&#10;2. clean code" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. remove unnecessary packages&#10;2. clean code" />
+    <MESSAGE value="1. Options for users&#10;2. One sentence one bubble" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Options for users&#10;2. One sentence one bubble" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -728,22 +683,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/steps_components/index.jsx">
+    <entry file="file://$PROJECT_DIR$/src/lib/steps_components/text/TextStep.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="462">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/steps_components/custom/CustomStep.jsx">
+    <entry file="file://$PROJECT_DIR$/src/MultipleSteps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="945">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -755,39 +720,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DialogFlowStep.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/steps_components/text/TextStep.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MultipleSteps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/steps_components/options/OptionsStep.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
+        <state relative-caret-position="798">
           <caret line="43" column="72" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -795,20 +730,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/lib/steps_components/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="82" column="15" lean-forward="true" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+        <state relative-caret-position="21">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/ChatBot.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
+        <state relative-caret-position="4998">
           <caret line="259" column="23" selection-start-line="259" selection-start-column="23" selection-end-line="259" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DialogFlowStep.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="53" lean-forward="true" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/steps_components/custom/CustomStep.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -817,8 +772,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BotConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" />
+        <state relative-caret-position="126">
+          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
