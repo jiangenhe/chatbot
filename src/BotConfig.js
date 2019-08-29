@@ -12,6 +12,7 @@ const botConfig = {
   HM: {gender: 'M', race: 'H', avatar:'./avatar/hm.png', name: 'Antonio'},
   WF: {gender: 'F', race: 'W', avatar:'./avatar/wf.png', name: 'Molly'},
   WM: {gender: 'M', race: 'W', avatar:'./avatar/wm.png', name: 'Jake'},
+  BL: {race: 'BL', avatar: './avatar/bl.png', name: 'Robbie'}
 }
 
 export default botConfig;

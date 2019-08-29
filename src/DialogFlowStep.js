@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Loading } from 'react-simple-chatbot';
-import UserData, {SESSION_ID} from './UserData'
+import UserData, { postStep, SESSION_ID, INTENT_NAME, USER_INPUT } from './UserData'
 
 class DialogFlowStep extends Component {
   constructor(props) {
@@ -20,7 +20,11 @@ class DialogFlowStep extends Component {
     const { sendMessage, previousStep } = this.props;
     const query = sendMessage ? sendMessage : previousStep.value;
 
-    fetch(`http://jiangenhe.com:8001/?query=${query}${UserData.get(SESSION_ID) ? `&sessionId=${UserData.get(SESSION_ID)}` : ''}`, {mode: "cors"})
+    if (query) {
+      postStep({StepType: USER_INPUT, Data: query});
+    }
+
+    fetch(`http://ec2-18-219-166-117.us-east-2.compute.amazonaws.com:3000/?query=${query}${UserData.get(SESSION_ID) ? `&sessionId=${UserData.get(SESSION_ID)}` : ''}`, {mode: "cors"})
       .then(response => {
         return response.json();
       })
@@ -29,6 +33,11 @@ class DialogFlowStep extends Component {
           if (data.sessionId) {
             UserData.set(SESSION_ID, data.sessionId)
           }
+        }
+
+        if (data.intent) {
+          if (data.intent.displayName)
+            postStep({StepType: INTENT_NAME, Data: data.intent.displayName});
         }
 
         let messages;

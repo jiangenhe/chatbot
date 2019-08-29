@@ -6,8 +6,6 @@ import DialogFlowStep from './DialogFlowStep'
 import userData, {BOT_CODE} from './UserData'
 import botConfig from './BotConfig'
 import AvatarImageStep from './AvatarImageStep'
-import DialogFlowOptionsStep
-  from './lib/steps_components/options/DialogFlowOptionsStep'
 import MultipleSteps from './MultipleSteps'
 
 let steps;
@@ -96,11 +94,12 @@ class App extends Component {
 
 
   render () {
+    document.title = `Chat with ${botConfig[userData.get(BOT_CODE)].name}`;
     if (userData.get(BOT_CODE)) {
       return (
         <div style={{width: '420px', margin: '10px auto'}}>
           <ThemeProvider theme={theme}>
-            <ChatBot width='420px' height='750px' steps={steps} botAvatar={`images/${userData.get(BOT_CODE)}_small.png`} botName={botConfig[userData.get(BOT_CODE)].name}/>
+            <ChatBot headerTitle={`Chat with ${botConfig[userData.get(BOT_CODE)].name}`} width='420px' height='750px' steps={steps} botAvatar={`images/${userData.get(BOT_CODE)}_small.png`} botName={botConfig[userData.get(BOT_CODE)].name}/>
           </ThemeProvider>
         </div>
       )

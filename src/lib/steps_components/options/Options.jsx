@@ -5,6 +5,7 @@ const Options = styled.ul`
   padding: 0 6px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 
 export default Options;
