@@ -5,11 +5,17 @@ import OptionElement from './OptionElement';
 import Options from './Options';
 import OptionsStepContainer from './OptionsStepContainer';
 
+import userData, {RID,STUDY_ID} from '../../../UserData'
+
 class OptionsStep extends Component {
   onOptionClick = ({ value }) => {
     const { triggerNextStep } = this.props;
-
+    if (value === 'Take me to the Survey.'){
+      window.open(`https://umdsurvey.umd.edu/jfe/form/SV_50IxOfTo7nE6Wfr?ScreenRId=${userData.get(RID)}&StudyId=${userData.get(STUDY_ID)}`, '_self')
+      return;
+    }
     triggerNextStep({ value });
+
   };
 
   renderOption = option => {

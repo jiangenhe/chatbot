@@ -257,9 +257,9 @@ class ChatBot extends Component {
       if (currentStep.asOption) {
         option = {value: data.value, label: data.value, trigger: 'dialog-flow'};
         trigger = 'dialog-flow'
-        if (data.value==='Bye!') {
-          trigger = 'end';
-        }
+        // if (data.value==='Bye!') {
+        //   trigger = 'end';
+        // }
       } else {
         option = currentStep.options.filter(
           o => o.value === data.value)[0];
