@@ -31,6 +31,8 @@ Object.freeze(instance);
 const parsed = queryString.parse(window.location.search)
 if (BOT_CODE in parsed){
   instance.set(BOT_CODE, parsed[BOT_CODE])
+} else {
+  instance.set(BOT_CODE, 'BL')
 }
 
 if (RID in parsed) {
@@ -40,10 +42,12 @@ if (RID in parsed) {
 instance.set(STUDY_ID, shortid.generate())
 instance.set(STEP_NUM, 0)
 
-const WEB_SERVER = 'http://ec2-18-219-166-117.us-east-2.compute.amazonaws.com:3000/users'
+const WEB_SERVER = 'http://ec2-13-58-157-255.us-east-2.compute.amazonaws.com:3000/users'
 
 export const postStep = (data) => {
+  return
   // Default options are marked with *
+  instance.set(STEP_NUM, instance.get(STEP_NUM) + 1)
   let postData = data;
   postData.StudyId = instance.get(STUDY_ID);
   postData.StepNum = instance.get(STEP_NUM);
@@ -63,7 +67,6 @@ export const postStep = (data) => {
     body: JSON.stringify({data_id: 'Steps', data: postData}), // body data type must match "Content-Type" header
   })
     .then(response => {
-      instance.set(STEP_NUM, instance.get(STEP_NUM) + 1)
       return response.json()
     })
     .catch(error => console.log(error));

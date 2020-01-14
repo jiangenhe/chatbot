@@ -24,7 +24,7 @@ class DialogFlowStep extends Component {
       postStep({StepType: USER_INPUT, Data: query});
     }
 
-    fetch(`http://ec2-18-219-166-117.us-east-2.compute.amazonaws.com:3000/?query=${query}${UserData.get(SESSION_ID) ? `&sessionId=${UserData.get(SESSION_ID)}` : ''}`, {mode: "cors"})
+    fetch(`http://ec2-18-209-128-134.compute-1.amazonaws.com:8001/?query=${query}${UserData.get(SESSION_ID) ? `&sessionId=${UserData.get(SESSION_ID)}` : ''}`, {mode: "cors"})
       .then(response => {
         return response.json();
       })
@@ -34,7 +34,7 @@ class DialogFlowStep extends Component {
             UserData.set(SESSION_ID, data.sessionId)
           }
         }
-
+        // User Behavior Monitor
         if (data.intent) {
           if (data.intent.displayName)
             postStep({StepType: INTENT_NAME, Data: data.intent.displayName});

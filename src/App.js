@@ -14,13 +14,14 @@ if (userData.get(BOT_CODE)) {
   steps = [
     {
       id: 'welcome-text',
-      message: `Welcome :wave: I'm ${botConfig[userData.get(BOT_CODE)].name}`,
-      trigger: 'welcome-image',
+      message: `Welcome! :wave: I'm ${botConfig[userData.get(BOT_CODE)].name}`,
+      trigger: 'welcome-image'
     },
     {
       id: 'welcome-image',
       component: <AvatarImageStep/>,
-      trigger: 'welcome-user-hi'
+      trigger: 'welcome-user-hi',
+      delay: 2000
     },
     {
       id: 'welcome-user-hi',
@@ -30,16 +31,25 @@ if (userData.get(BOT_CODE)) {
           label: `Hi ${botConfig[userData.get(BOT_CODE)].name}`,
           trigger: 'welcome-intro-1'
         }],
+      delay: 2000
     },
     {
       id: 'welcome-intro-1',
-      message: 'I\'m an Artificial Intelligence, or, a bot. :robot_face:',
-      trigger: 'welcome-intro-2'
+      message: 'Nice to meet you!',
+      trigger: 'welcome-intro-2',
+      delay: 1000
     },
     {
       id: 'welcome-intro-2',
-      message: 'I listen to your story and help you better cope with life. :smile:',
-      trigger: 'dialog-welcome'
+      message: 'I know I\'m not real, but I\'m here to listen to you and help you through life.',
+      trigger: 'welcome-intro-3',
+      delay: 2000
+    },
+    {
+      id: 'welcome-intro-3',
+      message: 'Think of me as a texting buddy that gets better every time we talk!',
+      trigger: 'dialog-welcome',
+      delay: 2000
     },
     {
       id: 'dialog-welcome',
@@ -62,13 +72,15 @@ if (userData.get(BOT_CODE)) {
       id: 'dialog-flow',
       component: <DialogFlowStep/>,
       waitAction: true,
-      asMessage: true
+      asMessage: true,
+      delay: 1500
     },
     {
       id: 'multiple',
       component: <MultipleSteps/>,
       asMessage: true,
-      waitAction: true
+      waitAction: true,
+      delay: 2000
     },
     {
       id: 'bye',
@@ -91,8 +103,6 @@ const theme = {
 };
 
 class App extends Component {
-
-
   render () {
     document.title = `Chat with ${botConfig[userData.get(BOT_CODE)].name}`;
     if (userData.get(BOT_CODE)) {
