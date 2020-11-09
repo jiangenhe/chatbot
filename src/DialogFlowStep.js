@@ -82,12 +82,6 @@ class DialogFlowStep extends Component {
             }
           }
         }
-
-
-
-        // else {
-        //   self.setState({ loading: false, result: 'Not found.' });
-        // }
       });
   }
 

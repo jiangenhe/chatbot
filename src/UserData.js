@@ -42,10 +42,9 @@ if (RID in parsed) {
 instance.set(STUDY_ID, shortid.generate())
 instance.set(STEP_NUM, 0)
 
-const WEB_SERVER = 'http://ec2-13-58-157-255.us-east-2.compute.amazonaws.com:3000/users'
+const WEB_SERVER = 'http://ec2-18-209-128-134.compute-1.amazonaws.com:8001/users'
 
 export const postStep = (data) => {
-  return
   // Default options are marked with *
   instance.set(STEP_NUM, instance.get(STEP_NUM) + 1)
   let postData = data;
